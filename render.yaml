@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: live-joiner
+    runtime: python
+    buildCommand: "apt-get install -y ffmpeg && pip install -r requirements.txt"
+    startCommand: "python bot.py"
